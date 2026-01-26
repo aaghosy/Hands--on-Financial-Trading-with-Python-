@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF Translator 设置（Gemini）</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "PingFang SC", "Microsoft Yahei", sans-serif;
+        padding: 24px;
+        max-width: 720px;
+        margin: 0 auto;
+        color: #0f172a;
+      }
+      h1 {
+        font-size: 20px;
+        margin-bottom: 12px;
+      }
+      label {
+        display: block;
+        margin-top: 16px;
+        font-weight: 600;
+      }
+      input {
+        width: 100%;
+        margin-top: 8px;
+        padding: 10px 12px;
+        border: 1px solid #cbd5f5;
+        border-radius: 8px;
+      }
+      .hint {
+        margin-top: 6px;
+        color: #64748b;
+        font-size: 12px;
+      }
+      button {
+        margin-top: 20px;
+        padding: 10px 16px;
+        border: none;
+        background: #1d4ed8;
+        color: #ffffff;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+      .status {
+        margin-top: 12px;
+        color: #0f766e;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>PDF Translator 设置</h1>
+    <p>请填写 Gemini API Key，选中文本后即可翻译或直接提问。</p>
+
+    <label for="apiKey">Gemini API Key</label>
+    <input id="apiKey" type="password" placeholder="AIza..." />
+    <div class="hint">Key 会保存在 Chrome 同步存储中。</div>
+
+    <label for="model">模型名称</label>
+    <input id="model" type="text" placeholder="gemini-1.5-flash" />
+    <div class="hint">默认使用 gemini-1.5-flash。</div>
+
+    <button id="save">保存设置</button>
+    <div class="status" id="status"></div>
+
+    <script src="options.js"></script>
+  </body>
+</html>
