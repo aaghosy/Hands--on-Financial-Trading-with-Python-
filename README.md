@@ -26,3 +26,7 @@ Instagram: aaghosy
 
 
 
+
+## Portfolio Project: Ecommerce Data Audit (No Dashboards)
+I added a practical portfolio project focused on reconciliation, landed COGS accuracy, data validation, and audit trail:
+- `portfolio/ecom_data_audit/README.md`
